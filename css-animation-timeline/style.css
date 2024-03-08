@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px system-ui;
+}
+
+.progress {
+  position: fixed;
+  width: 100vw;
+  height: 5px;
+  background: linear-gradient(to left, blue, green, blue);
+  scale: 0 1;
+  animation: progress-animation linear both;
+  animation-timeline: scroll();
+}
+@keyframes progress-animation {
+  to {
+    scale: 1 1;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100dvh;
+  padding: 5rem;
+  background: linear-gradient(orange, maroon);
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  animation: scale linear both;
+  animation-timeline: scroll();
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

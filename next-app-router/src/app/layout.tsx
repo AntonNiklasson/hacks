@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="flex h-full flex-col">
-          <header className="align-center flex grow-0 justify-between bg-blue-100 p-2">
+          <header className="align-center flex grow-0 justify-between bg-orange-100 p-2">
             <h1 className="font-mono text-2xl font-bold">Lorem Ipsum</h1>
 
             <nav className="align-center flex gap-4">

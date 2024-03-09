@@ -6,13 +6,14 @@
 
 body {
   font: 16px system-ui;
+  color: white;
 }
 
 .progress {
   position: fixed;
   width: 100vw;
   height: 5px;
-  background: linear-gradient(to left, blue, green, blue);
+  background: linear-gradient(to left, red, pink, red);
   scale: 0 1;
   animation: progress-animation linear both;
   animation-timeline: scroll();
@@ -32,22 +33,27 @@ section {
   height: 100dvh;
   padding: 5rem;
   background: linear-gradient(orange, maroon);
-  color: white;
 }
 
 img {
   max-width: 100%;
-  animation: scale linear both;
-  animation-timeline: scroll();
+  opacity: 0;
+  animation: appear ease-in forwards;
+  animation-timeline: view(90dvh 5dvh);
+  /*
+  * The values passed to view() here means this:
+  * 1. End the animation this far from the top
+  * 2. Start the animation this far from the bottom
+  */
 }
 
-@keyframes scale {
+@keyframes appear {
   from {
-    transform: scale(0.9);
+    scale: 0.8;
     opacity: 0;
   }
   to {
-    transform: scale(1);
+    scale: 1;
     opacity: 1;
   }
 }

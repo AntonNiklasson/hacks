@@ -4,5 +4,6 @@ I want to play around with `animation-timeline`. Specifically `scroll()` and `vi
 
 ## Resources:
 
+- [Docs on `view()`](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline/view)
 - [CSS-tricks: Practical Use Cases for Scroll-Linked Animations in CSS with Scroll Timelines](https://css-tricks.com/practical-use-cases-for-scroll-linked-animations-in-css-with-scroll-timelines/)
-- Kevin Powell: Incredible scroll-based animations with CSS-only [![Kevin Powell explains scroll() and view()](https://img.youtube.com/vi/UmzFk68Bwdk/0.jpg)](https://www.youtube.com/watch?v=UmzFk68Bwdk)
+- Youtube: Incredible scroll-based animations with CSS-only [![Kevin Powell explains scroll() and view()](https://img.youtube.com/vi/UmzFk68Bwdk/0.jpg)](https://www.youtube.com/watch?v=UmzFk68Bwdk)

@@ -10,7 +10,10 @@ type ButtonComponent = FC<
 
 export const Button: ButtonComponent = ({ children, onClick }) => {
   return (
-    <button className="bg-blue-300 p-2 rounded-xl" onClick={onClick}>
+    <button
+      className="rounded-xl bg-blue-300 p-2 hover:bg-blue-600 active:bg-blue-500"
+      onClick={onClick}
+    >
       {children}
     </button>
   );

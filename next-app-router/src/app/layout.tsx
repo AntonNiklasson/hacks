@@ -16,7 +16,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="flex h-full flex-col">
+          <header className="align-center flex grow-0 justify-between bg-blue-100 p-2">
+            <h1 className="font-mono text-2xl font-bold">Lorem Ipsum</h1>
+
+            <nav className="align-center flex gap-4">
+              <a href="/">Home</a>
+              <a href="/nested">Nested</a>
+            </nav>
+          </header>
+
+          <main className="grow">{children}</main>
+        </div>
+      </body>
     </html>
   );
 }

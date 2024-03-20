@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 200ms;
+}
+
+bodrky {
+  font: 16px system-ui;
+  counter-reset: section;
+}
+
+section {
+  width: 100vw;
+  height: 80dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset;
+}
+section::after {
+  counter-increment: section;
+  content: counter(section);
+  color: #555;
+  font-size: 30px;
+  top: 1em;
+  right: 1em;
+  position: absolute;
+}
+
+/* Dark Mode */
+section.dark-mode {
+  background: white;
+  color: #222;
+
+  &:has(input:checked) {
+    background: black;
+    color: white;
+  }
+}
+
+/* Form errors */
+section.form-error {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .form-element {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .form-element:has(.error) {
+    border-left: 3px solid red;
+    color: red;
+
+    input {
+      border-color: red;
+    }
+  }
+}
+
+/* Child count */
+section.child-count {
+  flex-direction: column;
+  gap: 1em;
+
+  .container {
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+  }
+
+  .container:has(input:checked) {
+    background: green;
+  }
+}

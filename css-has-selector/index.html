@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS :has()</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Toggle dark mode on the page when the checkbox is checked -->
+    <section class="dark-mode">
+      <label>
+        Dark mode
+        <input type="checkbox" />
+      </label>
+    </section>
+
+    <!-- Style the entire form element based on the presence of an error -->
+    <section class="form-error">
+      <form>
+        <div class="form-element">
+          <label
+            >Name:
+            <input type="text" />
+          </label>
+        </div>
+        <div class="form-element">
+          <label
+            >Email:
+            <input type="text" />
+          </label>
+          <span class="error">That doesn't look like an email</span>
+        </div>
+      </form>
+    </section>
+
+    <!-- Style a container based on the number of children -->
+    <section class="child-count">
+      <h2>Check two or more boxes</h2>
+
+      <div class="container">
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox" />
+      </div>
+    </section>
+  </body>
+</html>

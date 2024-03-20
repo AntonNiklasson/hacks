@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "entryPoint": "src/App.tsx",
+    "name": "react-native-expo",
+    "slug": "memories",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9a5ef08f-d1b3-4886-9b4e-7e0557ace939"
+      }
+    },
+    "owner": "antonniklasson"
+  }
+}

@@ -5,28 +5,28 @@ import { Input } from "./Input";
 import { FC, useState } from "react";
 
 type Props = {
-  onSubmit: () => void | Promise<void>;
-  onCancel: () => void | Promise<void>;
+	onSubmit: () => void | Promise<void>;
+	onCancel: () => void | Promise<void>;
 };
 
 export const CreatePost: FC<Props> = ({ onCancel, onSubmit }) => {
-  const [title, setTitle] = useState("");
+	const [title, setTitle] = useState("");
 
-  return (
-    <Container>
-      <Input
-        value={title}
-        onChangeText={(text) => setTitle(text)}
-        autoFocus
-        placeholder="What's up?"
-      />
+	return (
+		<Container>
+			<Input
+				value={title}
+				onChangeText={(text) => setTitle(text)}
+				autoFocus
+				placeholder="What's up?"
+			/>
 
-      <Buttons>
-        <Button label="Save" onPress={onSubmit} />
-        <Button variant="destructive" label="Cancel" onPress={onCancel} />
-      </Buttons>
-    </Container>
-  );
+			<Buttons>
+				<Button label="Save" onPress={onSubmit} />
+				<Button variant="destructive" label="Cancel" onPress={onCancel} />
+			</Buttons>
+		</Container>
+	);
 };
 
 const Container = styled.View`
